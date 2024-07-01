@@ -1,0 +1,100 @@
+// Define the Node class
+class Node {
+    int data;
+    Node next;
+
+    // Constructor to initialize the node with data and set next as null
+    Node(int data) {
+        this.data = data;
+        this.next = null;
+    }
+}
+
+// Define the LinkedList class
+class LinkedList {
+    Node head;
+
+    // Constructor to initialize the head of the list as null
+    LinkedList() {
+        this.head = null;
+    }
+
+    // Method to add a new node with given data at the end of the list
+    public void add(int data) {
+        Node newNode = new Node(data);
+
+        if (head == null) {
+            head = newNode;
+        } else {
+            Node current = head;
+            while (current.next != null) {
+                current = current.next;
+            }
+            current.next = newNode;
+        }
+    }
+
+    // Method to print all the elements of the list
+    public void printList() {
+        Node current = head;
+        while (current != null) {
+            System.out.print(current.data + " ");
+            current = current.next;
+        }
+        System.out.println();
+    }
+
+    // Method to delete a node with given key
+    public void delete(int key) {
+        Node current = head, prev = null;
+
+        if (current != null && current.data == key) {
+            head = current.next;
+            return;
+        }
+
+        while (current != null && current.data != key) {
+            prev = current;
+            current = current.next;
+        }
+
+        if (current == null) return;
+
+        prev.next = current.next;
+    }
+
+    // Method to search for a node with given key
+    public boolean search(int key) {
+        Node current = head;
+        while (current != null) {
+            if (current.data == key) {
+                return true;
+            }
+            current = current.next;
+        }
+        return false;
+    }
+
+    public static void main(String[] args) {
+        LinkedList list = new LinkedList();
+
+        // Adding elements to the list
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(4);
+
+        // Printing the list
+        System.out.print("Linked List: ");
+        list.printList();
+
+        // Deleting an element from the list
+        list.delete(3);
+        System.out.print("After deletion of 3: ");
+        list.printList();
+
+        // Searching for an element in the list
+        System.out.println("Search for 2: " + list.search(2));
+        System.out.println("Search for 5: " + list.search(5));
+    }
+}

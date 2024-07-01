@@ -1,0 +1,95 @@
+class Node {
+    int data;
+    Node next;
+}
+
+public class LinkedListInsertion {
+    public static void main(String[] args) {
+        // Create an empty linked list
+        Node head = null;
+
+        // Insert elements at the beginning
+        head = insertAtBeginning(head, 10);
+        head = insertAtBeginning(head, 20);
+        head = insertAtBeginning(head, 30);
+
+        // Insert elements at the end
+        head = insertAtEnd(head, 40);
+        head = insertAtEnd(head, 50);
+
+        // Insert an element at a specific position (e.g., position 3)
+        head = insertAtPosition(head, 25, 3);
+
+        // Print the linked list
+        printLinkedList(head);
+    }
+
+    // Insert at the beginning
+    static Node insertAtBeginning(Node head, int data) {
+        Node newNode = new Node();
+        newNode.data = data;
+        newNode.next = head;
+        return newNode;
+    }
+
+    // Insert at the end
+    static Node insertAtEnd(Node head, int data) {
+        Node newNode = new Node();
+        newNode.data = data;
+        newNode.next = null;
+
+        if (head == null) {
+            return newNode;
+        }
+
+        Node current = head;
+        while (current.next != null) {
+            current = current.next;
+        }
+        current.next = newNode;
+        return head;
+    }
+
+    // Insert at a specific position
+    static Node insertAtPosition(Node head, int data, int position) {
+        Node newNode = new Node();
+        newNode.data = data;
+
+        if (position < 1) {
+            System.out.println("Invalid position!");
+            return head;
+        }
+
+        if (position == 1) {
+            newNode.next = head;
+            return newNode;
+        }
+
+        Node current = head;
+        for (int i = 1; i < position - 1; i++) {
+            if (current == null) {
+                System.out.println("Invalid position!");
+                return head;
+            }
+            current = current.next;
+        }
+
+        if (current == null) {
+            System.out.println("Invalid position!");
+            return head;
+        }
+
+        newNode.next = current.next;
+        current.next = newNode;
+        return head;
+    }
+
+    // Print the linked list
+    static void printLinkedList(Node head) {
+        Node current = head;
+        while (current != null) {
+            System.out.print(current.data + " ");
+            current = current.next;
+        }
+    }
+}

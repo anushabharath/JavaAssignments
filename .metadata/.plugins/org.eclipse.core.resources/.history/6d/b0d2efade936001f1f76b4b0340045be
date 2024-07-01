@@ -1,0 +1,104 @@
+package com.wipro.app;
+
+public class LinkedList {
+    Node head; // head of the list
+
+    static class Node {
+        int data;
+        Node next;
+
+        Node(int d) {
+            data = d;
+            next = null;
+        }
+    }
+
+    // Method to insert a new node at the beginning of the list
+    public static LinkedList insertAtBeginning(LinkedList list, int data) {
+        Node new_node = new Node(data);
+        new_node.next = list.head;
+        list.head = new_node;
+        return list;
+    }
+
+    // Method to insert a new node at the end of the list
+    public static LinkedList insertAtEnd(LinkedList list, int data) {
+        Node new_node = new Node(data);
+        new_node.next = null;
+
+        if (list.head == null) {
+            list.head = new_node;
+        } else {
+            Node last = list.head;
+            while (last.next != null) {
+                last = last.next;
+            }
+            last.next = new_node;
+        }
+        return list;
+    }
+
+    // Method to insert a new node at a specific position in the list
+    public static LinkedList insertAtPosition(LinkedList list, int data, int position) {
+        Node new_node = new Node(data);
+        new_node.next = null;
+
+        if (position < 1) {
+            System.out.println("Invalid position. Position should be >= 1.");
+            return list;
+        }
+
+        if (position == 1) {
+            new_node.next = list.head;
+            list.head = new_node;
+            return list;
+        }
+
+        Node current = list.head;
+        for (int i = 1; i < position - 1 && current != null; i++) {
+            current = current.next;
+        }
+
+        if (current == null) {
+            System.out.println("Invalid position. Position is beyond the length of the list.");
+        } else {
+            new_node.next = current.next;
+            current.next = new_node;
+        }
+
+        return list;
+    }
+
+    // Method to print the LinkedList
+    public static void printList(LinkedList list) {
+        Node currNode = list.head;
+
+        System.out.print("LinkedList: ");
+
+        while (currNode != null) {
+            System.out.print(currNode.data + " ");
+            currNode = currNode.next;
+        }
+        System.out.println();
+    }
+
+    // main method to test the above methods
+    public static void main(String[] args) {
+        // Start with the empty list
+        LinkedList list = new LinkedList();
+
+        // Insert elements at the beginning
+        list = insertAtBeginning(list, 111);
+        list = insertAtBeginning(list, 222);
+        
+        // Insert elements at the end
+        list = insertAtEnd(list, 333);
+        list = insertAtEnd(list, 444);
+        
+        // Insert element at a specific position
+        list = insertAtPosition(list, 555, 3);
+
+        // Print the LinkedList
+        printList(list);
+    }
+}

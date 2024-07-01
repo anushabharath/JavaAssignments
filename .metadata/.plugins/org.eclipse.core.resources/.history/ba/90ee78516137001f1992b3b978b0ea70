@@ -1,0 +1,47 @@
+package searching;
+
+import java.util.Scanner;
+
+public class LinearSearch {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        // Get the size of the array
+        System.out.print("Enter the number of elements in the array: ");
+        int size = scanner.nextInt();
+        
+        // Get the elements of the array
+        int[] arr = new int[size];
+        System.out.println("Enter the elements of the array:");
+        for (int i = 0; i < size; i++) {
+            arr[i] = scanner.nextInt();
+        }
+        
+        // Get the target element
+        System.out.print("Enter the target element to search: ");
+        int target = scanner.nextInt();
+        
+        // Perform the linear search
+        boolean isFound = linearSearch(arr, target);
+        
+        // Output the result
+        if (isFound) {
+            System.out.println("Element found in the array.");
+        } else {
+            System.out.println("Element not found in the array.");
+        }
+        
+        scanner.close();
+    }
+
+    public static boolean linearSearch(int[] arr, int target) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == target) {
+                return true; // Element found
+            }
+        }
+        return false; // Element not found
+    }
+}
+
+
