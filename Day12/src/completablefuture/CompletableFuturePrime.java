@@ -1,88 +1,73 @@
 package completablefuture;
 
-
 import java.io.File;
 import java.io.PrintWriter;
-import java.sql.Array;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.*;
 
-public class CompletableFuturePrime
-{
-    public static List<Integer> calculatePrime(int range)
-    {
-        List<Integer> pr = new ArrayList<>();
-
-        for(int i=2;i<=range;i++)
-        {
-            if(isPrime(i))
-            {
-                pr.add(i);
+public class CompletableFuturePrime {
+    public static List<Integer> calculatePrime(int start, int end) {
+        List<Integer> primes = new ArrayList<>();
+        for (int i = start; i <= end; i++) {
+            if (isPrime(i)) {
+                primes.add(i);
             }
         }
-        return pr;
+        return primes;
     }
-    public static boolean isPrime(int x)
-    {
-        if(x<=1)
+
+    public static boolean isPrime(int x) {
+        if (x <= 1)
             return false;
-      for(int i=2;i<=Math.sqrt(x);i++)
-      {
-          if(x%i==0)
-              return  false;
-      }
-      return true;
+        for (int i = 2; i <= Math.sqrt(x); i++) {
+            if (x % i == 0)
+                return false;
+        }
+        return true;
     }
-    public static void writeToFile(List<Integer> p)
-    {
-        try (PrintWriter wr = new PrintWriter(new File("D://aaa.txt"))){
-            for(Integer prime : p)
-            {
-                wr.println(prime);
+
+    public static void writeToFile(List<Integer> primes, String filename) {
+        try (PrintWriter writer = new PrintWriter(new File(filename))) {
+            for (Integer prime : primes) {
+                writer.println(prime);
             }
-            System.out.println("Written to the file");
-        }
-        catch (Exception e)
-        {
-
+            System.out.println("Prime numbers written to the file: " + filename);
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 
-
-    public static void main(String args[]) throws ExecutionException, InterruptedException {
+    public static void main(String[] args) throws ExecutionException, InterruptedException {
         int range = 1000;
-
         int tasks = 4;
+        String filename = "D://aaa.txt";
 
         ExecutorService executor = Executors.newFixedThreadPool(tasks);
         List<Future<List<Integer>>> futures = new ArrayList<>();
-        int limit = range/tasks;
+        int limit = range / tasks;
 
-        for(int i=0;i<tasks;i++)
-        {
+        for (int i = 0; i < tasks; i++) {
+            int start = i * limit + 1;
+            int end = (i == tasks - 1) ? range : (i + 1) * limit;
 
-            int s = i*limit+1;
-            int e =(i==tasks-1)? range:(i+1)*limit;
-
-
-        futures.add(executor.submit(()-> calculatePrime(e)));
-
+            futures.add(executor.submit(() -> calculatePrime(start, end)));
         }
-        List<Integer> primenumbers = new ArrayList<>();
-        for(Future<List<Integer>> f : futures)
-        {
+
+        List<Integer> primeNumbers = new ArrayList<>();
+        for (Future<List<Integer>> f : futures) {
             try {
-                primenumbers.addAll(f.get());
-            }
-            catch(Exception e)
-            {
-
+                primeNumbers.addAll(f.get());
+            } catch (Exception e) {
+                e.printStackTrace();
             }
         }
-              executor.shutdown();
+        executor.shutdown();
 
-        CompletableFuture.runAsync(()-> writeToFile(primenumbers));
+        CompletableFuture<Void> writeToFileFuture = CompletableFuture.runAsync(() -> writeToFile(primeNumbers, filename));
+        writeToFileFuture.get(); // Wait for the write operation to complete
 
-     }
+        // Run the CompletableExample
+        CompletableExample.runExample();
+    }
 }
