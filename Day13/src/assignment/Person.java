@@ -1,12 +1,8 @@
 package assignment;
-
-import java.io.Serializable;
-
-public class Person implements Serializable {
-    private static final long serialVersionUID = 1L;
+class Person {
     private String name;
     private int age;
-    
+
     public Person(String name, int age) {
         this.name = name;
         this.age = age;
@@ -22,6 +18,11 @@ public class Person implements Serializable {
 
     @Override
     public String toString() {
-        return "Person{name='" + name + "', age=" + age + '}';
+        return "Person{name='" + name + "', age=" + age + "}";
     }
+
+	public Object setAge(int i) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

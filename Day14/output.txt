@@ -1,0 +1,6 @@
+a: 1
+input: 1
+file: 1
+this: 1
+is: 1
+text: 1
