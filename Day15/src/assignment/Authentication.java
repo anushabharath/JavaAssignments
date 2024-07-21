@@ -1,90 +1,88 @@
 package assignment;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Scanner;
 
 public class Authentication {
-    private static final String URL = "jdbc:sqlite:sample.db";
 
     public static void main(String[] args) {
-        try (Connection conn = DriverManager.getConnection(URL)) {
-            if (conn != null) {
-                System.out.println("Connection to SQLite has been established.");
-                createTable(conn);
-                insertUser(conn, "testUser", "testPassword");
+        Connection con = null;
+        try {
+            // Load the MySQL JDBC driver (optional with modern JDBC drivers)
+            Class.forName("com.mysql.cj.jdbc.Driver");
 
-                Scanner scanner = new Scanner(System.in);
-                System.out.print("Enter User ID: ");
-                String userId = scanner.nextLine();
-                System.out.print("Enter Password: ");
-                String password = scanner.nextLine();
+            // Establish the connection to the database
+            String URL = "jdbc:mysql://localhost:3306/user";
+            String user = "root";
+            String password = "rps@123";
+            con = DriverManager.getConnection(URL, user, password);
 
-                if (authenticateUser(conn, userId, password)) {
-                    System.out.println("Access Granted");
-                } else {
-                    System.out.println("Access Denied");
-                }
+            // Create table if it does not exist
+            String createTableSQL = "CREATE TABLE IF NOT EXISTS User ("
+                    + "UserID VARCHAR(255) NOT NULL, "
+                    + "PasswordHash VARCHAR(255) NOT NULL, "
+                    + "PRIMARY KEY (UserID))";
+            Statement stmt = con.createStatement();
+            stmt.execute(createTableSQL);
 
-                scanner.close();
-            }
-        } catch (SQLException | NoSuchAlgorithmException e) {
-            System.out.println(e.getMessage());
-        }
-    }
+            // Accept user input for UserID and Password
+            Scanner scanner = new Scanner(System.in);
+            System.out.print("Enter User ID: ");
+            String inputUserID = scanner.nextLine();
+            System.out.print("Enter Password: ");
+            String inputPassword = scanner.nextLine();
 
-    private static void createTable(Connection conn) throws SQLException {
-        String sql = "CREATE TABLE IF NOT EXISTS User ("
-                + "UserID TEXT PRIMARY KEY,"
-                + "PasswordHash TEXT NOT NULL"
-                + ");";
-        try (Statement stmt = conn.createStatement()) {
-            stmt.execute(sql);
-            System.out.println("Table 'User' created successfully.");
-        }
-    }
+            // Hash the password
+            String passwordHash = hashPassword(inputPassword);
 
-    private static void insertUser(Connection conn, String userId, String password) throws SQLException, NoSuchAlgorithmException {
-        String hashedPassword = hashPassword(password);
-        String sql = "INSERT INTO User (UserID, PasswordHash) VALUES (?, ?)";
-
-        try (PreparedStatement pstmt = conn.prepareStatement(sql)) {
-            pstmt.setString(1, userId);
-            pstmt.setString(2, hashedPassword);
-            pstmt.executeUpdate();
-            System.out.println("User inserted successfully.");
-        }
-    }
-
-    private static boolean authenticateUser(Connection conn, String userId, String password) throws SQLException, NoSuchAlgorithmException {
-        String hashedPassword = hashPassword(password);
-        String sql = "SELECT * FROM User WHERE UserID = ? AND PasswordHash = ?";
-
-        try (PreparedStatement pstmt = conn.prepareStatement(sql)) {
-            pstmt.setString(1, userId);
-            pstmt.setString(2, hashedPassword);
+            // Check if user exists with the given UserID and Password
+            String query = "SELECT * FROM User WHERE UserID = ? AND PasswordHash = ?";
+            PreparedStatement pstmt = con.prepareStatement(query);
+            pstmt.setString(1, inputUserID);
+            pstmt.setString(2, passwordHash);
             ResultSet rs = pstmt.executeQuery();
 
-            return rs.next();
+            if (rs.next()) {
+                System.out.println("Access Granted");
+            } else {
+                System.out.println("Access Denied");
+            }
+
+        } catch (ClassNotFoundException e) {
+            System.err.println("MySQL JDBC Driver not found.");
+            e.printStackTrace();
+        } catch (SQLException e) {
+            System.err.println("SQL error occurred.");
+            e.printStackTrace();
+        } finally {
+            if (con != null) {
+                try {
+                    con.close();
+                } catch (SQLException e) {
+                    System.err.println("Failed to close the connection.");
+                    e.printStackTrace();
+                }
+            }
         }
     }
 
-    private static String hashPassword(String password) throws NoSuchAlgorithmException {
-        MessageDigest md = MessageDigest.getInstance("SHA-256");
-        byte[] hash = md.digest(password.getBytes());
-        StringBuilder hexString = new StringBuilder();
-
-        for (byte b : hash) {
-            hexString.append(String.format("%02x", b));
+    // Method to hash a password using SHA-256
+    public static String hashPassword(String password) {
+        String hashedPassword = null;
+        try {
+            MessageDigest md = MessageDigest.getInstance("SHA-256");
+            byte[] hash = md.digest(password.getBytes());
+            StringBuilder sb = new StringBuilder();
+            for (byte b : hash) {
+                sb.append(String.format("%02x", b));
+            }
+            hashedPassword = sb.toString();
+        } catch (NoSuchAlgorithmException e) {
+            System.err.println("Error hashing password");
+            e.printStackTrace();
         }
-
-        return hexString.toString();
+        return hashedPassword;
     }
 }
-
