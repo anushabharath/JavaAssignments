@@ -5,35 +5,35 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DatabaseConnectionManager {
-    // Static variable reference of single_instance of type DatabaseConnectionManager
-    private static DatabaseConnectionManager singleInstance = null;
+    // Private static variable of single instance of the class
+    private static volatile DatabaseConnectionManager instance;
     private Connection connection;
+    private String url = "jdbc:mysql://localhost:3306/wipro";
+    private String username = "rps";
+    private String password = "rps@123";
 
-    // Private constructor to restrict instantiation of the class from other classes
+    // Private constructor to restrict instantiation from other classes
     private DatabaseConnectionManager() {
         try {
-            // Initialize the database connection here (replace with actual database details)
-            String url = "jdbc:mysql://localhost:3306/wipro";
-            String username = "root";
-            String password = "rps@123";
             connection = DriverManager.getConnection(url, username, password);
         } catch (SQLException e) {
-            e.printStackTrace();
+            throw new RuntimeException("Error connecting to the database", e);
         }
     }
 
-    // Static method to create instance of DatabaseConnectionManager class
+    // Public static method that returns the instance of the class
     public static DatabaseConnectionManager getInstance() {
-        if (singleInstance == null) {
+        if (instance == null) {
             synchronized (DatabaseConnectionManager.class) {
-                if (singleInstance == null) {
-                    singleInstance = new DatabaseConnectionManager();
+                if (instance == null) {
+                    instance = new DatabaseConnectionManager();
                 }
             }
         }
-        return singleInstance;
+        return instance;
     }
 
+    // Public method to get the database connection
     public Connection getConnection() {
         return connection;
     }
