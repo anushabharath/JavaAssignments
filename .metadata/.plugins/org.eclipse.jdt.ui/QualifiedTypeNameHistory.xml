@@ -4,4 +4,6 @@
     <fullyQualifiedTypeName name="java.util.concurrent.CompletableFuture"/>
     <fullyQualifiedTypeName name="java.util.function.BiFunction"/>
     <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
 </qualifiedTypeNameHistroy>
