@@ -25,4 +25,23 @@ public class Operation implements Serializable {
     public String getOperator() {
         return operator;
     }
+
+    public double performOperation() {
+        switch (operator) {
+            case "+":
+                return number1 + number2;
+            case "-":
+                return number1 - number2;
+            case "*":
+                return number1 * number2;
+            case "/":
+                if (number2 != 0) {
+                    return number1 / number2;
+                } else {
+                    throw new ArithmeticException("Division by zero is not allowed.");
+                }
+            default:
+                throw new IllegalArgumentException("Invalid operator.");
+        }
+    }
 }

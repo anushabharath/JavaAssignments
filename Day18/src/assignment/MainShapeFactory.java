@@ -1,3 +1,7 @@
+/*Task 2: Factory Method
+Create a ShapeFactory class that encapsulates the object creation logic of different Shape objects like Circle, Square, and Rectangle."
+*/
+
 package assignment;
 
 public class MainShapeFactory {
