@@ -1,0 +1,34 @@
+<!--Assignment 2: Use regular expressions in JavaScript to validate the email address entered in the form. It should check for the correct format of the email and display a message to the user if the format is incorrect."-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Object Manipulation with Email Validation</title>
+</head>
+<body>
+    <h2>User Object Manipulation</h2>
+    <p><strong>Name:</strong> <span id="userName">Ram</span></p>
+    <p><strong>Email:</strong> <span id="userEmail">ram.222@example.com</span></p>
+    <p><strong>Age:</strong> <span id="userAge">26</span></p>
+    <p><strong>Birth Year:</strong> <span id="userBirthYear">1994</span></p>
+
+    <div>
+        <input type="text" id="newName" placeholder="Enter new name">
+        <button onclick="changeName()">Change Name</button>
+    </div>
+    <div>
+        <input type="email" id="newEmail" placeholder="Enter new email">
+        <button onclick="updateEmail()">Update Email</button>
+        <p id="emailError" style="color:red;"></p>
+    </div>
+    <div>
+        <input type="number" id="newAge" placeholder="Enter new age">
+        <button onclick="updateAge()">Update Age</button>
+    </div>
+    <button onclick="displayBirthYear()">Calculate Birth Year</button>
+    <script src="scripts.js">
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;  
+    box-sizing: border-box;
+}
+
+/* Container styles */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header, footer, and columns */
+.header, .footer {
+    background-color: #d2e2f3;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px; /* Combined margin adjustments */
+}
+
+.content {
+    display: flex;
+    gap: 10px;
+}
+
+.column {
+    background-color: #cceff3;
+    padding: 20px;
+    flex: 1;
+    margin: 10px 0; /* Combined margin adjustments */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+}

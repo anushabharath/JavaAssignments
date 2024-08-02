@@ -1,0 +1,77 @@
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    padding: 10px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-item {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+
+/* Hover effect for menu items */
+.menu-item:hover {
+    color: #ff0;
+    transform: scale(1.1);
+}
+
+/* Styles for form container */
+.form-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea, button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+
+input, textarea, button {
+    animation: fadeIn 1s ease-in;
+}
+
+/* Hover effect for button */
+button:hover {
+    background-color: #ddd;
+    transform: scale(1.05);
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 600px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-container {
+        width: 90%;
+        padding: 10px;
+    }
+}

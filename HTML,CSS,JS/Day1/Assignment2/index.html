@@ -1,0 +1,69 @@
+<!-- Assignment 2: Create a simple HTML page that includes the use of headings, paragraphs, and at least two semantic tags like 
+ <article> or <section>. Add a table with data of your choice and a form with fields for a user's name, email, and a submit button.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Simple HTML Page</h1>
+    </header>
+
+    <section>
+        <h2>About This Page</h2>
+        <p>This is a simple HTML page created as part of an assignment. It includes headings, paragraphs, semantic tags, a table, and a form.</p>
+    </section>
+
+    <article>
+        <h2>Table of Sample Data</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ram</td>
+                    <td>25</td>
+                    <td>Chennai</td>
+                </tr>
+                <tr>
+                    <td>Bairavi</td>
+                    <td>24</td>
+                    <td>Bangalore</td>
+                </tr>
+                <tr>
+                    <td>Charan</td>
+                    <td>26</td>
+                    <td>Vellore</td>
+                </tr>
+            </tbody>
+        </table>
+    </article>
+
+    <section>
+        <h2>Contact Form</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required >
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Simple HTML Page. All rights reserved.</p>
+    </footer>
+</body>
+</html>

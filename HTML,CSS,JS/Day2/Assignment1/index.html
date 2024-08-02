@@ -1,0 +1,34 @@
+<!--Assignment 1: Create a JavaScript object representing a user with properties for name, email, and age. Write functions that manipulate this object, such as changing the name, updating the email, and calculating the user's birth year.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Object Manipulation</title>
+</head>
+<body>
+    <h2>User Object Manipulation</h2>
+    <p><strong>Name:</strong> <span id="userName">Ram</span></p>
+    <p><strong>Email:</strong> <span id="userEmail">ram.222@example.com</span></p>
+    <p><strong>Age:</strong> <span id="userAge">26</span></p>
+    <p><strong>Birth Year:</strong> <span id="userBirthYear">1994</span></p>
+
+    <div>
+        <input type="text" id="newName" placeholder="Enter new name">
+        <button onclick="changeName()">Change Name</button>
+    </div>
+    <div>
+        <input type="email" id="newEmail" placeholder="Enter new email">
+        <button onclick="updateEmail()">Update Email</button>
+    </div>
+    <div>
+        <input type="number" id="newAge" placeholder="Enter new age">
+        <button onclick="updateAge()">Update Age</button>
+    </div>
+    <button onclick="displayBirthYear()">Calculate Birth Year</button>
+
+    <script src="scripts.js">
+     
+    </script>
+</body>
+</html>

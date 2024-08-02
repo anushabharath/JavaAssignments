@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu li {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.nav-menu li a:hover {
+    background-color: #575757;
+}
+
+section {
+    padding: 60px 20px;
+    margin-top: 50px; /* Adjust according to the height of the nav bar */
+}
+
+#home {
+    background-color: #f1f1f1;
+    height: 100vh;
+}
+
+#about {
+    background-color: #e2e2e2;
+    height: 100vh;
+}
+
+#services {
+    background-color: #d3d3d3;
+    height: 100vh;
+}
+
+#contact {
+    background-color: #c4c4c4;
+    height: 100vh;
+}
+
+/* Highlight the active link based on the :target pseudo-class */
+:target::before {
+    content: "";
+    display: block;
+    height: 50px; /* Height of the fixed navbar */
+    margin-top: -50px;
+    visibility: hidden;
+}
+
+:target {
+    padding-top: 50px; /* Adjust according to the height of the nav bar */
+}
+
+.nav-menu li a[href="#home"]:target,
+.nav-menu li a[href="#about"]:target,
+.nav-menu li a[href="#services"]:target,
+.nav-menu li a[href="#contact"]:target {
+    background-color: #4CAF50;
+}
