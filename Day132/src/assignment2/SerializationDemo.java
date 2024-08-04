@@ -1,7 +1,4 @@
-/*Task 2: Serialization and Deserialization
-Serialize a custom object to a file and then deserialize it back to recover the object state.
-*/
-package assignment;
+package assignment2;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

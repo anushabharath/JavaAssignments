@@ -1,8 +1,4 @@
-/*Task 4: Java Networking
-Write a simple HTTP client that connects to a URL, sends a request, and displays the response headers and body.
-*/
-
-package assignment;
+package assignment4;
 
 import java.io.BufferedReader;
 import java.io.IOException;

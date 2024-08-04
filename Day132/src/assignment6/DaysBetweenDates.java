@@ -1,8 +1,4 @@
-/*
-Task 6: Java 8 Date and Time API
-Write a program that calculates the number of days between two dates input by the user."
-*/
-package assignment;
+package assignment6;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;

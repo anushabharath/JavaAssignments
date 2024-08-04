@@ -1,7 +1,5 @@
 package assignment;
 
-import java.util.LinkedList;
-import java.util.Queue;
 
 public class ProducerConsumerExample {
     public static void main(String[] args) {

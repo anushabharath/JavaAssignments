@@ -1,8 +1,4 @@
-/*Task 7: Timezone
-Create a timezone converter that takes a time in one timezone and converts it to another timezone.
-*/
-
-package assignment;
+package assignment7;
 
 import java.time.LocalDateTime;
 import java.time.ZonedDateTime;
