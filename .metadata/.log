@@ -6744,3 +6744,1793 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2024-08-04 22:38:08.402 -----------------------------------------------
+eclipse.buildId=4.21.0.I20210906-0500
+java.version=17.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.oomph.p2.core 2 0 2024-08-04 22:38:10.193
+!MESSAGE Failed to register the thread safe credentials providers: 'java.util.Map org.eclipse.core.internal.runtime.AdapterManager.getFactories()'
+
+!ENTRY org.eclipse.jface 2 0 2024-08-04 22:38:24.266
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-08-04 22:38:24.266
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3ad2883a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5814b4fb,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-08-04 22:38:28.934
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Anu'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:56:11.007
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:56:15.841
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:56:15.843
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:56:15.850
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:56:15.851
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:56:15.857
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:56:15.859
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:56:15.865
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:56:15.867
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:56:15.873
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:56:15.875
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:56:15.882
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:56:15.883
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:56:16.244
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:56:16.247
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:56:16.253
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:56:16.255
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:56:16.262
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:56:16.264
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:56:16.271
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:56:16.274
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:56:35.033
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:56:35.035
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2024-08-04 22:56:42.628
+!MESSAGE An error occurred while collecting items to be installed
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2024-08-04 22:56:42.628
+!MESSAGE session context was:(profile=C__Users_Anu_eclipse_java-2021-09_eclipse, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 4 2024-08-04 22:56:42.628
+!MESSAGE Result of processing steps.
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:56:42.628
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:56:42.628
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:56:42.628
+!MESSAGE Public key not found for 6640597757109451687.
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:56:42.629
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 4 2024-08-04 22:56:42.629
+!MESSAGE Result of processing steps.
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:56:42.629
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:56:42.629
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:56:42.629
+!MESSAGE Public key not found for 8074478291308066379.
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:56:42.629
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 4 2024-08-04 22:56:42.629
+!MESSAGE Result of processing steps.
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:56:42.629
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:56:42.629
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:56:42.629
+!MESSAGE Public key not found for 6640597757109451687.
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:56:42.629
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 4 2024-08-04 22:56:42.629
+!MESSAGE Result of processing steps.
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:56:42.629
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:56:42.629
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:56:42.629
+!MESSAGE Public key not found for 6640597757109451687.
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:56:42.629
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 4 2024-08-04 22:56:42.629
+!MESSAGE Result of processing steps.
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:56:42.629
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:56:42.629
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:56:42.629
+!MESSAGE Public key not found for -5034155639734203956.
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:56:42.629
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 4 2024-08-04 22:56:42.629
+!MESSAGE Result of processing steps.
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:56:42.629
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:56:42.629
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:56:42.629
+!MESSAGE Public key not found for 8074478291308066379.
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:56:42.629
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 4 2024-08-04 22:56:42.629
+!MESSAGE Result of processing steps.
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:56:42.629
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:56:42.629
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:56:42.629
+!MESSAGE Public key not found for 6640597757109451687.
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:56:42.629
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 4 2024-08-04 22:56:42.629
+!MESSAGE Result of processing steps.
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:56:42.629
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:56:42.629
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:56:42.629
+!MESSAGE Public key not found for 6640597757109451687.
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:56:42.629
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 4 2024-08-04 22:56:42.629
+!MESSAGE Result of processing steps.
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:56:42.629
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:56:42.629
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:56:42.629
+!MESSAGE Public key not found for 6640597757109451687.
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:56:42.629
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 4 2024-08-04 22:56:42.629
+!MESSAGE Result of processing steps.
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:56:42.629
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:56:42.629
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:56:42.629
+!MESSAGE Public key not found for 6640597757109451687.
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:56:42.629
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 4 2024-08-04 22:56:42.629
+!MESSAGE Result of processing steps.
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:56:42.629
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:56:42.629
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:56:42.629
+!MESSAGE Public key not found for -8587782299385769255.
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:56:42.629
+!MESSAGE OK
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:58:20.224
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:58:20.225
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:58:20.226
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:58:20.227
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:58:20.228
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:58:20.228
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:58:20.229
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:58:20.229
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:58:20.230
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:58:20.230
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:58:20.231
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:58:20.232
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:58:20.233
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:58:20.233
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:58:20.234
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:58:20.235
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:58:20.236
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:58:20.236
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:58:20.237
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:58:20.238
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:58:20.239
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:58:20.239
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2024-08-04 22:58:20.243
+!MESSAGE An error occurred while collecting items to be installed
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2024-08-04 22:58:20.243
+!MESSAGE session context was:(profile=C__Users_Anu_eclipse_java-2021-09_eclipse, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 4 2024-08-04 22:58:20.243
+!MESSAGE Result of processing steps.
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:58:20.243
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:58:20.243
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:58:20.243
+!MESSAGE Public key not found for 6640597757109451687.
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:58:20.243
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 4 2024-08-04 22:58:20.243
+!MESSAGE Result of processing steps.
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:58:20.243
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:58:20.243
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:58:20.243
+!MESSAGE Public key not found for 8074478291308066379.
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:58:20.243
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 4 2024-08-04 22:58:20.243
+!MESSAGE Result of processing steps.
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:58:20.243
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:58:20.243
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:58:20.243
+!MESSAGE Public key not found for 6640597757109451687.
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:58:20.243
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 4 2024-08-04 22:58:20.243
+!MESSAGE Result of processing steps.
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:58:20.243
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:58:20.243
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:58:20.243
+!MESSAGE Public key not found for 6640597757109451687.
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:58:20.243
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 4 2024-08-04 22:58:20.243
+!MESSAGE Result of processing steps.
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:58:20.243
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:58:20.243
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:58:20.243
+!MESSAGE Public key not found for -5034155639734203956.
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:58:20.243
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 4 2024-08-04 22:58:20.243
+!MESSAGE Result of processing steps.
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:58:20.243
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:58:20.243
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:58:20.243
+!MESSAGE Public key not found for 8074478291308066379.
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:58:20.243
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 4 2024-08-04 22:58:20.243
+!MESSAGE Result of processing steps.
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:58:20.243
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:58:20.243
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:58:20.243
+!MESSAGE Public key not found for 6640597757109451687.
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:58:20.243
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 4 2024-08-04 22:58:20.243
+!MESSAGE Result of processing steps.
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:58:20.243
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:58:20.243
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:58:20.243
+!MESSAGE Public key not found for 6640597757109451687.
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:58:20.243
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 4 2024-08-04 22:58:20.243
+!MESSAGE Result of processing steps.
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:58:20.243
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:58:20.243
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:58:20.243
+!MESSAGE Public key not found for 6640597757109451687.
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:58:20.243
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 4 2024-08-04 22:58:20.243
+!MESSAGE Result of processing steps.
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:58:20.243
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:58:20.243
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:58:20.243
+!MESSAGE Public key not found for 6640597757109451687.
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:58:20.243
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 4 2024-08-04 22:58:20.243
+!MESSAGE Result of processing steps.
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:58:20.243
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:58:20.243
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 22:58:20.243
+!MESSAGE Public key not found for -8587782299385769255.
+!SUBENTRY 2 unknown 0 0 2024-08-04 22:58:20.243
+!MESSAGE OK
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 23:20:11.775
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 23:20:11.776
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 23:20:11.777
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 23:20:11.778
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 23:20:11.778
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 23:20:11.780
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 23:20:11.782
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 23:20:11.782
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 23:20:11.783
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 23:20:11.784
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 23:20:11.785
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 23:20:11.785
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 23:20:11.786
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 23:20:11.787
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 23:20:11.789
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 23:20:11.789
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 23:20:11.790
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 23:20:11.791
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 23:20:11.792
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 23:20:11.794
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 23:20:11.795
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 23:20:11.796
+!MESSAGE org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+!STACK 0
+org.bouncycastle.openpgp.PGPException: org.bouncycastle.openpgp.PGPPublicKey found where PGPPublicKeyRing expected
+	at org.bouncycastle.openpgp.PGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.bouncycastle.openpgp.bc.BcPGPPublicKeyRingCollection.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:146)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.readPublicKeys(PGPSignatureVerifier.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.processors.pgp.PGPSignatureVerifier.initialize(PGPSignatureVerifier.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPGPSignatureVerifier(SimpleArtifactRepository.java:494)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.addPostSteps(SimpleArtifactRepository.java:481)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.processDestination(SimpleArtifactRepository.java:1142)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:782)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:328)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:298)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:234)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:156)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:770)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2024-08-04 23:20:11.800
+!MESSAGE An error occurred while collecting items to be installed
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2024-08-04 23:20:11.800
+!MESSAGE session context was:(profile=C__Users_Anu_eclipse_java-2021-09_eclipse, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 4 2024-08-04 23:20:11.800
+!MESSAGE Result of processing steps.
+!SUBENTRY 2 unknown 0 0 2024-08-04 23:20:11.800
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2024-08-04 23:20:11.800
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 23:20:11.800
+!MESSAGE Public key not found for 6640597757109451687.
+!SUBENTRY 2 unknown 0 0 2024-08-04 23:20:11.800
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 4 2024-08-04 23:20:11.800
+!MESSAGE Result of processing steps.
+!SUBENTRY 2 unknown 0 0 2024-08-04 23:20:11.800
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2024-08-04 23:20:11.800
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 23:20:11.800
+!MESSAGE Public key not found for 8074478291308066379.
+!SUBENTRY 2 unknown 0 0 2024-08-04 23:20:11.800
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 4 2024-08-04 23:20:11.800
+!MESSAGE Result of processing steps.
+!SUBENTRY 2 unknown 0 0 2024-08-04 23:20:11.800
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2024-08-04 23:20:11.800
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 23:20:11.800
+!MESSAGE Public key not found for 6640597757109451687.
+!SUBENTRY 2 unknown 0 0 2024-08-04 23:20:11.800
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 4 2024-08-04 23:20:11.800
+!MESSAGE Result of processing steps.
+!SUBENTRY 2 unknown 0 0 2024-08-04 23:20:11.800
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2024-08-04 23:20:11.800
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 23:20:11.800
+!MESSAGE Public key not found for 6640597757109451687.
+!SUBENTRY 2 unknown 0 0 2024-08-04 23:20:11.800
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 4 2024-08-04 23:20:11.800
+!MESSAGE Result of processing steps.
+!SUBENTRY 2 unknown 0 0 2024-08-04 23:20:11.800
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2024-08-04 23:20:11.800
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 23:20:11.800
+!MESSAGE Public key not found for -5034155639734203956.
+!SUBENTRY 2 unknown 0 0 2024-08-04 23:20:11.800
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 4 2024-08-04 23:20:11.800
+!MESSAGE Result of processing steps.
+!SUBENTRY 2 unknown 0 0 2024-08-04 23:20:11.800
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2024-08-04 23:20:11.800
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 23:20:11.800
+!MESSAGE Public key not found for 8074478291308066379.
+!SUBENTRY 2 unknown 0 0 2024-08-04 23:20:11.800
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 4 2024-08-04 23:20:11.800
+!MESSAGE Result of processing steps.
+!SUBENTRY 2 unknown 0 0 2024-08-04 23:20:11.800
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2024-08-04 23:20:11.800
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 23:20:11.800
+!MESSAGE Public key not found for 6640597757109451687.
+!SUBENTRY 2 unknown 0 0 2024-08-04 23:20:11.800
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 4 2024-08-04 23:20:11.800
+!MESSAGE Result of processing steps.
+!SUBENTRY 2 unknown 0 0 2024-08-04 23:20:11.800
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2024-08-04 23:20:11.800
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 23:20:11.800
+!MESSAGE Public key not found for 6640597757109451687.
+!SUBENTRY 2 unknown 0 0 2024-08-04 23:20:11.800
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 4 2024-08-04 23:20:11.800
+!MESSAGE Result of processing steps.
+!SUBENTRY 2 unknown 0 0 2024-08-04 23:20:11.800
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2024-08-04 23:20:11.800
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 23:20:11.800
+!MESSAGE Public key not found for 6640597757109451687.
+!SUBENTRY 2 unknown 0 0 2024-08-04 23:20:11.800
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 4 2024-08-04 23:20:11.800
+!MESSAGE Result of processing steps.
+!SUBENTRY 2 unknown 0 0 2024-08-04 23:20:11.800
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2024-08-04 23:20:11.800
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 23:20:11.800
+!MESSAGE Public key not found for 6640597757109451687.
+!SUBENTRY 2 unknown 0 0 2024-08-04 23:20:11.800
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 4 2024-08-04 23:20:11.800
+!MESSAGE Result of processing steps.
+!SUBENTRY 2 unknown 0 0 2024-08-04 23:20:11.800
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2024-08-04 23:20:11.800
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2024-08-04 23:20:11.800
+!MESSAGE Public key not found for -8587782299385769255.
+!SUBENTRY 2 unknown 0 0 2024-08-04 23:20:11.800
+!MESSAGE OK
