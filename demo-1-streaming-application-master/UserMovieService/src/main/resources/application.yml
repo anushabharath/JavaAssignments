@@ -1,0 +1,23 @@
+server:
+  port: 8082
+spring:
+  data:
+    mongodb:
+      # Here mongodbservice is the service name given in docker-compose file
+      #uri: mongodb://mongodbservice:27017/movie_db
+      uri: mongodb://localhost:27017/movies_db
+  application:
+    name: user-movie-service
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+    fetchRegistry: true
+    registerWithEureka: true
+  instance:
+    hostname: localhost
+
+
+
+
